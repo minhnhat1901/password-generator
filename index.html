@@ -6,20 +6,25 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Password Generation</title>
 </head>
 <body>
     <div class="container">
+        
         <div id="content-block">
             <h1>Generate a<br><span id="next-line">random password</span></h1>
             <h3>Never use an insecure password again</h3>
-            <button id="pass-gen-btn">Generate passwords</button>
+            <div id="pass-length-request" hidden>
+                <label for="pass-length" id="pass-request">Enter the length of password:</label>
+                <input type="text" id="user-input" placeholder="Password length">
+            </div>
+            <button id="pass-gen-btn">Start</button>
         </div>
         <div id="break-line"></div>
         <div class="pass-row">
-            <div class="pass-field" id="option1"></div>
-            <div class="pass-field" id="option2"></div>
+            <div class="pass-field" id="pass-option1"></div>
+            <div class="pass-field" id="pass-option2"></div>
         </div>
     </div>
     <script src="index.js"></script>

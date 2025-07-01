@@ -14,7 +14,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 #content-block {
@@ -26,7 +25,6 @@ h1 {
     font-family: "Karla", sans-serif;
     font-weight: 800;
     font-size: 40px;
-    letter-spacing: -2.5%;
     color: #F3F4F6;
     margin: 0;
 }
@@ -44,17 +42,31 @@ h3 {
     color: #D5D4D8;
 }
 
-#pass-gen-btn {
-    width: 191px;
+#pass-length-request {
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #10B981;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 5px;
+}
+
+#pass-request {
+    color: blanchedalmond;
+}
+
+#user-input {
+    width: 150px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+#pass-gen-btn {
     font-family: Inter;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
+    background-color: #10B981;
+    color: #FFFFFF;
+    width: 191px;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -62,8 +74,7 @@ h3 {
     text-align: center;
     height: 1px;
     background-color: #2F3E53;
-    margin: 35px auto;
-    width: 80%;
+    margin: 35px 100px;
 }
 
 .pass-row {
@@ -73,9 +84,18 @@ h3 {
 }
 
 .pass-field {
-    width: 250px;
+    min-width: 250px;
+    width: auto;
     height: 50px;
     background: #273549;
-    border-radius: 5px;
-    margin: 30px;
+    border-radius: 6px;
+    margin: 35px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #55F991;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
 }
