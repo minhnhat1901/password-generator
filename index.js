@@ -37,3 +37,17 @@ generatePassBtn.addEventListener("click", function() {
     generatePassBtn.textContent = "Generate Password";
     generatePassword(userInputEl.value);
 });
+
+function copyToClipboard(password) {
+    navigator.clipboard.writeText(password)
+        .then(() => alert("Copied: " + password))
+        .catch(err => alert("Failed to copy!"));
+}
+
+pass1El.addEventListener("click", function() {
+    copyToClipboard(this.textContent);
+});
+
+pass2El.addEventListener("click", function() {
+    copyToClipboard(this.textContent);
+});
